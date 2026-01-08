@@ -285,6 +285,7 @@ Contact information
 ## 🔐 Admin Features
 
 ### Authentication System
+default username and password is admin & admin123
 - Secure session management
 - Login/logout functionality
 - Access control for admin routes
@@ -354,11 +355,6 @@ This project is proprietary software developed for Khansa Batool / Batool's Apti
 
 ---
 
-## 📞 Support
-
-For issues or questions:
-- **Email**: khansabatool@batoolsaptitude.com
-- **Location**: Lahore, Pakistan
 
 ---
 
