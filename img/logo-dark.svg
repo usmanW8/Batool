@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" width="300" height="80">
+  <!-- Dark mode version -->
+  <rect width="300" height="80" fill="transparent"/>
+  
+  <!-- Decorative element -->
+  <path d="M 10 40 Q 20 30, 30 40 T 50 40" stroke="#A67B5B" stroke-width="3" fill="none" opacity="0.8"/>
+  
+  <!-- Main text in light color for dark backgrounds - using system serif fonts -->
+  <text x="65" y="35" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#FAF7F2" style="letter-spacing: 0.05em;">
+    Batool's
+  </text>
+  <text x="65" y="60" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#FAF7F2" style="letter-spacing: 0.05em;">
+    Aptitude
+  </text>
+  
+  <!-- Accent underline -->
+  <line x1="65" y1="65" x2="220" y2="65" stroke="#A67B5B" stroke-width="2" opacity="0.9"/>
+  
+  <!-- Small artistic dot accent -->
+  <circle cx="225" cy="63" r="3" fill="#A67B5B"/>
+</svg>

@@ -1,0 +1,21 @@
+# Enable RewriteEngine
+RewriteEngine On
+RewriteBase /Batool/
+
+# Route /admin to /admin/index.php
+RewriteRule ^admin$ admin/ [R=301,L]
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect .htaccess file
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Protect database files
+<FilesMatch "\.(sql|db|sqlite)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

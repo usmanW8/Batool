@@ -1,0 +1,27 @@
+# Protect admin directory
+RewriteEngine On
+RewriteBase /Batool/admin/
+
+# Block access to includes directory
+RewriteRule ^includes/ - [F,L]
+
+# Block access to config directory
+RewriteRule ^config/ - [F,L]
+
+# Redirect /admin to /admin/index.php if not logged in
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^$ index.php [L]
+
+# Remove .php extension from URLs
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)$ $1.php [L]
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect .htaccess file
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
